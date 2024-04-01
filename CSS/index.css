@@ -1,0 +1,106 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color:aquamarine;
+    margin: auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+    grid-template-areas:
+    "area1 area1 area1"
+    "area2 area3 area3"
+    "area4 area4 area4";
+
+
+}
+
+.logo{
+    height: 12vh;
+}
+
+
+.head{
+    display: flex;
+    height: 15vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-style: oblique;
+    color: white;
+    /* background: linear-gradient( rgb(88, 85, 85), black); */
+    background: url("/img/headerfoot.png") no-repeat;
+    background-size: cover;
+    grid-area: area1;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    background: url("/img/aside.png") no-repeat;
+    background-size: cover;
+    grid-area: area2;
+    background-repeat: round;
+    
+}
+.boton{
+    width: 60%;
+    height: 8%;
+    background: linear-gradient( rgb(44, 43, 43), black);
+    border: 0px;
+    color:aliceblue;
+    border-radius: 3rem;
+    box-shadow: 1px 5px 50px rgb(0, 92, 128);
+}
+
+.main{
+    height: 70vh;
+    background: url("/img/Barimage.png") no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    grid-area: area3;
+}
+.reserva{
+    position: relative;
+    top: 45%;
+    left: 45%;
+    border: 1px solid white;
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 3rem;
+    
+}
+
+.pie{
+    height: 15vh;
+    background: url("/img/headerfoot.png") no-repeat;
+    background-size:cover ;
+    grid-area: area4;
+
+}
+
+@media(width < 540px){
+
+    .pie{
+        background-color: black;
+    }
+    .container{
+        grid-template-areas:
+    "area1 area1 area1"
+    "area2 area2 area2"
+    "area4 area4 area4";
+    }
+    .reserva{
+        display: none;
+    }
+
+}
