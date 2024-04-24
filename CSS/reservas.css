@@ -1,7 +1,15 @@
+body{
+    
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+}
+
 .container{
     width: 100vw;
     height: 100vh;
-    background-color:aquamarine;
+    background-color:rgb(154, 125, 172);
     margin: auto;
     display: grid;
     
@@ -41,11 +49,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
     background: url("/img/aside.png") no-repeat;
     background-size: cover;
     grid-area: area2;
     background-repeat: round;
+    
     
 }
 .boton{
@@ -56,15 +65,31 @@
     color:aliceblue;
     border-radius: 3rem;
     box-shadow: 1px 5px 50px rgb(0, 92, 128);
+    transition: all 0.5s;
+    
 }
 
+.boton:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+}
 .main{
+    display: flex;
     height: 70vh;
     background: url("/img/Barimage.png") no-repeat;
     background-size: cover;
     filter: brightness(70%);
     grid-area: area3;
 }
+
+
+main h2{
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
+
+
 .reserva{
     position: relative;
     top: 45%;
@@ -78,9 +103,50 @@
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
     border-radius: 3rem;
     
-    
 }
 
+
+
+.reservas{
+    display: flex;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 10px;
+    border: 0px;
+    
+
+}
+.reservas legend{
+    font-size: 20px;
+    font-style: oblique ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.reservas button{
+    
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.5s;
+    
+    
+}
+#submit:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+}
+
+#reset:hover{
+    transform: scale(1.25);
+    border-radius: 20px;
+}
 .pie{
     /* height: 25vh; */
     background: url("/img/headerfoot.png") no-repeat;
@@ -90,6 +156,12 @@
     text-align: center;
 
 }
+
+.footer{
+    display: flex;
+    
+}
+
 
 .redes {
     display: flex;
