@@ -50,9 +50,9 @@
                         <label for="no fumador">No fumador</label>
                         <br>
                         <legend>Fecha:</legend>
-                    <label for="fecha">Seleccione la fecha de su preferencia</label>
-                    <select name="fecha" id="fecha" required>
-                        <option value="" disabled selected hidden>Seleccione un día</option>
+                    <label for="date">Seleccione la fecha de su preferencia</label>
+                    <input name="date" id="date" type="date" required>
+                        <!-- <option value="" disabled selected hidden>Seleccione un día</option>
                         <option value="viernes">Viernes 1</option>
                         <option value="sabado">Sábado 2</option>
                         <option value="domingo">Domingo 3</option>
@@ -65,18 +65,25 @@
                         <option value="viernes">Viernes 22</option>
                         <option value="sabado">Sábado 23</option>
                         <option value="domingo">Domingo 24</option>
-                    </select>
+                    </select> -->
                         <br>
                         <legend>Horario:</legend>
                     <label for="horario">Seleccione el horario de su preferencia</label>
                     <select name="horario" id="horario" required>
                         <option value="" disabled selected hidden>Seleccione un horario</option>
+                        <option value="19">12 hs.</option>
+                        <option value="21">13 hs.</option>
+                        <option value="23">14 hs</option>
                         <option value="19">19 hs.</option>
                         <option value="21">21 hs.</option>
                         <option value="23">23 hs</option>
                     </select>
-                    </div>
                     
+                    <p><label for="comentarios">Dejanos tus comentarios o peticiones</label></p>
+                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Escribí tus comentarios"></textarea>
+                    </div>
+                    <div><input type="checkbox" id="cbox" value="checkbox" required>
+                    <label for="cbox">Acepto términos y condiciones</label></div>
                     <button id="submit" >Enviar</button>
                     <button id="reset">Limpiar formulario</button>
                     

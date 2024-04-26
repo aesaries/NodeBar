@@ -111,7 +111,7 @@ main h2{
     display: flex;
     justify-content: center;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     padding: 10px;
     border: 0px;
     
