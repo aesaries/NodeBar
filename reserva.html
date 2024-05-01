@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/brands.min.css">
+    <link rel="icon" href="./img/NodeBar.ico">
 </head>
 <body>
     <div class="navbar">
@@ -19,7 +20,46 @@
         </div>
     </div>
 
-    <main></main>
+    <main>
+      <div class="container-central-reservation">
+        <div class="value-prop">
+            <h1>Hacé tu reserva</h1>
+            <p>Disfrutá de un momento increible con tu familia o amigos.</p>
+            <p>Te esperamos con nuestro Cheff JS Node para que pruebes nuestros platos y postres exclusivos.</p>
+            <p>Completá el formulario de reserva y dejanos tus peticiones para que tu experiencia sea única!</p>
+
+          
+        </div>
+      <div class="reservation-form">
+        <h2>Completá el formulario</h2>
+        <form action="/submit_reservation" method="post">
+            <label for="name">Nombre y apellido:</label>
+            <input type="text" id="name" name="name" placeholder="Ej. Juan Sanchez" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="micorreo@email.com" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="phone" id="telefono" name="telefono" size="25" maxlength="35" placeholder="teléfono" required>
+            <label for="people">Cantidad de personas:</label>
+            <input type="number" id="people" name="people"min="1" placeholder="Ingresar cantidad" required>
+            <label for="date">Seleccione una fecha</label>
+            <input name="date" id="date" type="date" required>
+            <label for="horario">Seleccione un horario</label>
+            <select name="horario" id="horario" required>
+              <option value="" disabled selected hidden>Seleccione un horario</option>
+              <option value="19">12 hs.</option>
+              <option value="21">13 hs.</option>
+              <option value="23">14 hs</option>
+              <option value="19">19 hs.</option>
+              <option value="21">21 hs.</option>
+              <option value="23">23 hs</option>
+            </select>
+            <label for="comentarios">Dejanos tus comentarios o peticiones</label>
+              <textarea name="comentarios" id="comentarios" cols="60" rows="5" placeholder="Escribí tus comentarios"></textarea>
+            <br>
+            <button class="my-button">Reservar Mesa</button>
+        </form>
+    </div>
+    </main>
 
     <footer class="footer">
         <div class="container_footer">

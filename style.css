@@ -72,6 +72,17 @@ p {
     background-size: cover;
 }
 
+.container-central-reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150vh;
+  padding: 0 20px;
+  background-image: url('/img/fondo_home.png');
+  background-size: cover;
+}
+
 
 .value-prop {
     flex: 1;
@@ -101,7 +112,11 @@ p {
 
 .reservation-form input[type="text"],
 .reservation-form input[type="email"],
-.reservation-form input[type="number"] {
+.reservation-form input[type="phone"],
+.reservation-form input[type="number"],
+.reservation-form input[type="date"],
+.reservation-form select[name="horario"],
+.reservation-form textarea[id="comentarios"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 25px;
