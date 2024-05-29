@@ -1,0 +1,694 @@
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  display: block;
+  font-size: 60px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+/* Inicio de carrusel ***************************/
+.atras, .adelante{
+  position: absolute;
+  z-index: 1;
+  color:rgb(255, 252, 252);
+  font-size: 5rem;
+  user-select: none;
+  top:55%;
+}
+.atras {
+  left:4%; 
+}
+.adelante {
+  right: 4%;
+}
+
+.carrusel{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width:100vw;
+  height: 100vh;
+}
+
+.imagenes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.img{
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+  height: 90vh;
+  width: 95vw;
+  border-radius: 15px ;
+  margin: 5px;
+  object-fit: cover;
+  filter: saturate(175%);
+}
+
+.caja{
+  overflow: hidden;
+  position: absolute;
+  flex-direction: column;
+  transform: translateY(0px);
+  margin-bottom: 10px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(63, 106, 138, 0.21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.caja h3{
+  text-shadow: 0px 0px 15px black;
+  padding-top: 0rem;
+  margin: 0.5rem;
+  color: white;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+.caja p{
+  margin:0;
+  align-items: center;
+  padding: 0.5rem;
+  color:white;
+  font-size: 0px;
+  font-weight: 300;
+}
+
+.imagenes .caja{
+  width: 40%;
+  height: 5rem;
+  transition: 1s;
+}
+
+.imagenes:hover .caja{
+  transition: height 1s, transform 1s, background-color 1s;
+  transform: translateY(-10px);
+  height: 18rem;
+  background-color: rgba(63, 106, 138, 0.71);
+}
+
+.imagenes:hover .caja p{
+  transition: font-size 0s .2s linear;
+  font-size: 23px;
+  font-weight: 300;
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.puntos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.puntos p{
+  height: 5vh;
+  font-size: 100px;
+  font-weight: 500;
+  margin-top: -50px;
+  color: black;
+}
+
+.puntos .bold{
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #5E17EB ;
+}
+
+/* fin de carrusel *********************************************/
+
+p {
+  display: block;
+  font-size: 18px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #F2994A;
+}
+
+
+.menuHamburguesa{
+  color: white;
+  font-size: 2.5rem;
+  display: none;
+}
+
+.reserva-form input {
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.container-central {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  background-image: url('/img/fondo_home.png');
+  background-size: cover;
+}
+
+.container-central-reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150vh;
+  padding: 0 20px;
+  background-image: url('/img/fondo_home.png');
+  background-size: cover;
+}
+
+.container-central-reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 150vh;
+  padding: 0 20px;
+  background-image: url('/img/fondo_home.png');
+  background-size: cover;
+}
+
+
+.value-prop {
+  flex: 1;
+  color: white;
+  text-align: left;
+  padding: 50px;
+}
+
+.reservation-form {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(8, 2, 2, 0.342);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.reservation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-form input[type="text"],
+.reservation-form input[type="email"],
+.reservation-form input[type="phone"],
+.reservation-form input[type="number"],
+.reservation-form input[type="date"],
+.reservation-form select[name="horario"],
+.reservation-form textarea[id="comentarios"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  box-sizing: border-box;
+}
+
+.reservation-form input[type="file"]{
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    display: block;
+}
+.reservation-form input[type="checkbox"],
+    .reservation-form label[for="checkbox"]{
+    display: inline;
+    padding: 10px;
+    margin-bottom: 25px;
+    
+  }
+.my-button {
+  background-color: #F2994A;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.my-button:hover {
+  background-color: #b46c2d;
+}
+
+.section.products {
+  background-color: #f2f2f2;
+  padding: 65px;
+  text-align: center;
+}
+
+.section.products h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+.product-grid li {
+  text-align: left;
+  list-style: none;
+}
+
+.product-grid li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.product-grid li a:hover {
+  text-decoration: underline;
+}
+
+.product-grid li img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-grid li h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-grid li p {
+  font-size: 16px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.precio {
+  color: #F2994A;
+
+}
+
+.bajada {
+  padding-bottom: 50px;
+}
+
+.section.services {
+  background-image: url('/img/fondo_home2.png');
+  background-size: cover;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.section.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.grid-item h3 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #b46c2d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .container_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.footer .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer .nav li {
+  margin: 0 10px;
+}
+
+.footer .nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .nav a:hover {
+  text-decoration: underline;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social li {
+  margin: 0 10px;
+}
+
+.footer .social i {
+  font-size: 24px;
+  color: #fff;
+  transition: transform .3s;
+}
+
+.footer .social i:hover {
+  transform: translateY(-5px);
+}
+
+.cl_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cl_row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 24px 0;
+  margin: 50px;
+}
+
+.cl_lk_menu a {
+  color: #333333;
+  text-decoration: none;
+  transition: all 300;
+}
+
+.cl_lk_menu {
+  text-align: center;
+}
+
+.cl_lk_menu a:hover {
+  color: #F2994A;
+}
+
+.cl_col {
+  flex: 1;
+  padding: 0 10px;
+
+}
+
+.cl_item {
+  display: flex;
+  border: 1px solid #e9d2a98e;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cl_item-img {
+  width: 20%;
+}
+
+.cl_item-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cl_item-data {
+  width: 80%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.menu-header, .header_contac {
+  position: relative;
+  text-align: center;
+}
+
+.menu-header-image, .contact_header_image {
+  width: 100%;
+}
+
+.menu-header-image img, .contact_header_image img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-header-text, .header_contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* formulario y mapa de contacto*/
+
+.Contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ccc;
+}
+
+.Mensaje_contacto {
+  padding-top: 20px;
+  padding-left: calc(20% - 20px);
+}
+
+.Comentario_Formulario {
+  padding-top: 20px;
+  padding-right: calc(20% - 20px);
+  padding: 20 px;
+  padding-bottom: 20px;
+}
+
+.Ubicanos {
+  padding: 20 px;
+}
+
+/* estilos para el formulario*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea [id="mensaje"] {
+  height: 150px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media screen {
+   /* ******************* Media Query para Tablets ********************** */
+
+  @media (600px < width < 960px){
+
+    .carrusel{
+      display: none;
+    }
+    .puntos{
+      display: none;
+    }
+    .container-central{
+      
+      height: 50vh;
+      
+      padding: 0.5rem;
+      
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+     }
+
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    } 
+
+  }
+    /* ******************* Media Query para Celulares *********************** */
+  @media (0px < width < 600px){
+    .carrusel{
+      display: none;
+    }
+    .puntos{
+      display: none;
+    }
+    .container-central{
+      flex-direction: column;
+      height: 65vh;
+      
+      padding: 0.5rem;
+      align-items:center;
+    }
+    .value-prop{
+      width: 90vw;
+      margin: 0;
+      padding: 0;
+    
+    }
+    .reservation-form{
+      width: 90vw;
+    }
+
+    .nav-right{
+      display: none;
+    }
+    .nav-right.show {   /*********** la clase show se agrega o se quita al hacer click en el menu hamburguesa */
+      display: flex;
+      font-weight: bolder;
+      font-size: larger;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      background-color: rgb(5, 5, 5);
+      padding: 10px 0;
+      z-index: 999;
+  }
+  
+  .nav-right.show a {
+      margin: 10px 0;
+  }
+
+
+
+    .menuHamburguesa{
+      display: block;
+    }
+
+
+    .section.products {
+      padding: 5px;
+    }
+    .product-grid {
+      padding-left: 45px;
+      padding-right: 45px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-container {
+     
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+
+  }
+    
+}
+
+
+

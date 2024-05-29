@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Mustoso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="reserva.css" />
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/brands.min.css">
+    <link rel="icon" href="./img/NodeBar.ico">
+    <script src="./reserva.js"></script>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="/img/logo.svg" alt="Mustoso Logo" class="logo" />
+        <div class="nav-right">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="reserva.html">Reserva</a>
+        </div>
+        <div class="menuHamburguesa">
+          <i class="fa-solid fa-burger"></i>
+        </div>
+    </div>
+
+    <main>
+      <div class="container-central-reservation">
+        <div class="value-prop">
+            <h1>Hacé tu reserva</h1>
+            <p>Disfrutá de un momento increible con tu familia o amigos.</p>
+            <p>Te esperamos con nuestro Cheff JS Node para que pruebes nuestros platos y postres exclusivos.</p>
+            <p>Completá el formulario de reserva y dejanos tus peticiones para que tu experiencia sea única!</p>
+
+          
+        </div>
+      <div class="reservation-form">
+        <h2>Completá el formulario</h2>
+        <form action="/submit_reservation" method="post" onsubmit="return validarFormulario()">
+            <label for="name">Nombre y apellido:</label>
+            <input type="text" id="name" name="name" placeholder="Ej. Juan Sanchez">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="micorreo@email.com">
+            <label for="telefono">Teléfono:</label>
+            <input type="phone" id="telefono" name="telefono" size="25" maxlength="35" placeholder="teléfono">
+            <label for="people">Cantidad de personas:</label>
+            <input type="number" id="people" name="people"min="1" placeholder="Ingresar cantidad">
+            <label for="date">Seleccione una fecha</label>
+            <input name="date" id="date" type="date" required>
+            <label for="horario">Seleccione un horario</label>
+            <select name="horario" id="horario" required>
+              <option value="" disabled selected hidden>Seleccione un horario</option>
+              <option value="12">12 hs.</option>
+              <option value="13">13 hs.</option>
+              <option value="14">14 hs</option>
+              <option value="19">19 hs.</option>
+              <option value="21">21 hs.</option>
+              <option value="23">23 hs</option>
+            </select>
+           
+           <label for="imagen">Imagen:</label>
+            <input type="image" id="imagen" name="imagen" src="./img/NodeBar.ico" alt="Imagen" width="50" height="50">
+            <label for="comentarios">Dejanos tus comentarios o peticiones</label>
+              <textarea name="comentarios" id="comentarios" cols="60" rows="2" placeholder="Escribí tus comentarios"></textarea>
+           
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Acepto términos y condiciones</label>
+            
+            
+            <button class="my-button">Reservar Mesa</button>
+        </form>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container_footer">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <ul class="nav social">
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+</body>
+</html>

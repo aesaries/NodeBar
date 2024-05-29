@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <title>Mustoso</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/brands.min.css">
+    <link rel="icon" href="./img/NodeBar.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img src="/img/logo.svg" alt="Mustoso Logo" class="logo" />
+        <div class="nav-right">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="reserva.html">Reserva</a>
+        </div>
+        <div class="menuHamburguesa">
+          <i class="fa-solid fa-burger"></i>
+        </div>
+    </div>
+    
+    <div class="carrusel">
+      <div class="imagenes">
+          <div class="atras">
+            <i class="fa-solid fa-chevron-left" id="atras"></i>
+              <!-- <p id="atras" >&lt</p> -->
+          </div>
+          <div id="img">
+              <img class="img" src="img/carrusel1.png" alt="imagen 1" loading="lazy">
+          </div>
+          
+          <div id="texto" class="caja">
+              <h3>Un Lugar de encuentro !!</h3>
+              <p>Ven con amigos, y disfruta del mejor ambiente, y la comodiad de nuestras instalaciones</p>
+          </div>
+          <div class="adelante" id="adelante">
+            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+              <!-- <p id="adelante" >&gt</p> -->
+          </div>
+      </div>
+  </div>
+  <div class="puntos" id="puntos"></div>
+
+
+    <div class="container-central">
+        <div class="value-prop">
+            <h1>Welcome to our service!</h1>
+            <p>Here's why you should choose us: we offer the best, the fastest, and the most affordable service in town.</p>
+        </div>
+        <div class="reservation-form">
+            <h2>Reservas</h2>
+            <form action="/submit_reservation" method="post">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" placeholder="Ej. Juan Sanchez" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="micorreo@email.com" required />
+                <label for="people">Cantidad de personas:</label>
+                <input type="number" id="people" name="people"min="1" placeholder="Ingresar cantidad" required /><br>
+                <button class="my-button"><a href="./reserva.html"> Reservar Mesa</a></button>
+            </form>
+        </div>
+    </div>
+    <div class="section products">
+        <h2>Our Products</h2>
+        <p class="bajada">Here's why you should choose us: we offer the best, the fastest, and the most affordable service in town.</p>
+        <ul class="product-grid">
+          <li>
+            <a href="#">
+              <img src="/img/product_1.png" alt="Product 1">
+              <h3>Product 1</h3>
+              <p>Description of Product 1</p>
+              <h4 class="precio">$50</h4>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/img/product_2.png" alt="Product 2">
+              <h3>Product 2</h3>
+              <p>Description of Product 2</p>
+              <h4 class="precio">$50</h4>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/img/product_3.png" alt="Product 3">
+              <h3>Product 3</h3>
+              <p>Description of Product 3</p>
+              <h4 class="precio">$50</h4>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/img/product_4.png" alt="Product 4">
+              <h3>Product 4</h3>
+              <p>Description of Product 4</p>
+              <h4 class="precio">$50</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="section services">
+        <h2>Servicios</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="/img/icon_1.png" alt="Product 3">
+            <h3>+4</h3>
+            <p>Cheff Profesional</p>
+          </div>
+          <div class="grid-item">
+            <img src="/img/icon_2.png" alt="Product 3">
+            <h3>32</h3>
+            <p>ítems en la Carta</p>
+          </div>
+          <div class="grid-item">
+            <img src="/img/icon_3.png" alt="Product 3">
+            <h3>+40</h3>
+            <p>Años de Experiencia</p>
+          </div>
+          <div class="grid-item">
+            <img src="/img/icon_4.png" alt="Product 3">
+            <h3>830</h3>
+            <p>Eventos Realizados</p>
+          </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container_footer">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <ul class="nav social">
+            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+
+<script src="js/carrusel.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
