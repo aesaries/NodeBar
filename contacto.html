@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <title>Mustoso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/brands.min.css">
+  <link rel="icon" href="./img/NodeBar.ico">
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="/img/logo.svg" alt="Mustoso Logo" class="logo" />
+    <div class="nav-right">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="menu.html">Menú</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="reserva.html">Reserva</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="header_contac">
+      <div class="contact_header_image">
+        <img src="/img/header_contact.jpg" alt="Contact Background">
+      </div>
+      <h1 class="header_contact">Contacto</h1>
+    </div>
+    <div class="Contacts">
+      <div class="Mensaje_contacto">
+        <h2>Queremos escucharte</h2>
+        <p>Podes contactarte con nosotros visitandonos en nuestro local, comunicandote a nuestro numero de WhatsApp o a
+          nuestra casilla de correo electronico </p>
+
+        <ul style="list-style: none;">
+          <li><br></li>
+          <li><i class="fa-solid fa-location-dot"></i> Calle Falsa 123</li>
+          <li><br></li>
+          <li><i class="fab fa-whatsapp"></i> +54 9 11 123-4567</li>
+          <li><br></li>
+          <li><i class="fa-solid fa-envelope"></i> nodebar@mail.com</li>
+        </ul>
+      </div>
+      <div class="Comentario_Formulario">
+        <h2>Dejanos tu Mensaje</h2>
+        <form action="enviar.php" method="post">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br>
+
+          <label for="email">Correo Electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="celular">Número de Celular:</label><br>
+          <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required><br>
+
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" required></textarea><br>
+
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+    <div class="Ubicanos">
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7059.4835381691655!2d-64.25577483334351!3d-27.786929842412246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53a537e29c6d%3A0xb6edc591ec8dc646!2sNATIVO%20RESTAURANT!5e0!3m2!1sen!2sar!4v1715291661515!5m2!1sen!2sar"
+        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container_footer">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <ul class="nav social">
+        <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
