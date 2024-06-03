@@ -1,0 +1,65 @@
+.navbar {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 30px;
+  }
+  
+  .logo {
+    height: 30px;
+    width: auto;
+  }
+  
+  .navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #F2994A;
+  }
+  
+  
+  .menuHamburguesa{
+    color: white;
+    font-size: 2.5rem;
+    display: none;
+  }
+
+
+/* ******************* Media Query para Celulares *********************** */
+@media (0px < width < 600px){
+
+  .nav-right{
+    display: none;
+  }
+  .nav-right.show {   /*********** la clase show se agrega o se quita al hacer click en el menu hamburguesa */
+    display: flex;
+    font-weight: bolder;
+    font-size: larger;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.nav-right.show a {
+    margin: 10px 0;
+}
+
+.menuHamburguesa{
+    display: block;
+  }
+
+
+}
