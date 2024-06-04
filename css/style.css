@@ -608,6 +608,7 @@ input[type="submit"]:hover {
     
     }
     .reservation-form{
+      height: auto;
       width: 80vw;
     }
 
