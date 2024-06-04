@@ -597,8 +597,8 @@ input[type="submit"]:hover {
     .container-central{
       flex-direction: column;
       height: 90vh;
-      
-      padding: 0.5rem;
+     
+      padding: 1rem;
       align-items:center;
     }
     .value-prop{
@@ -608,7 +608,7 @@ input[type="submit"]:hover {
     
     }
     .reservation-form{
-      width: 90vw;
+      width: 80vw;
     }
 
    
