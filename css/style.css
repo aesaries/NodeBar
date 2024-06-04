@@ -597,7 +597,7 @@ input[type="submit"]:hover {
     .container-central{
       flex-direction: column;
       height: 95vh;
-     
+      overflow: hidden;    
       padding: 1rem;
       align-items:center;
     }
