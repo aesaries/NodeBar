@@ -611,13 +611,10 @@ input[type="submit"]:hover {
       width: 80vw;
     }
 
-   
-
-
-
-    
+      
 
     .section.products {
+      margin-top: 2rem;
       padding: 5px;
     }
     .product-grid {
